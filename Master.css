@@ -1,0 +1,484 @@
+    /* start global rules */
+    *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    :root{
+    --padding-top:100px;
+    --padding-Bottom:100px;
+    --paragraph-color: #5479ed;
+    --Span-Color:#4b8ef1;
+    --p-color: #777;
+    --transition: ALl 0.5s;
+    }
+    body{
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    }
+    ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    .Container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    /* small */
+    @media(min-width:768px){
+    .Container{
+        width: 750px;
+    }
+    }
+    /* medium */
+    @media(min-width:992px){
+    .Container{
+        width: 970px;
+    }
+    }
+    /* large */
+    @media(min-width:1200px){
+    .Container{
+        width: 1170px;
+    }
+    }
+    html{
+    scroll-behavior: smooth;
+    }
+    /* End global rules */
+    /* start Header */
+    header{
+    width: 100%;
+    padding: 25px 0;
+    }
+    /* Responsive Design */
+    @media(max-width:991px){
+        hr{
+            display: none;
+        }
+    }
+    header .Links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: white;
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    }
+    header .Links .List
+    ,ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    header .Links .List ul a{
+    text-decoration: none;
+    color: #6f6f6f;
+    margin-left: 30px;
+    font-size: 18px;
+    }
+    header .Links .List ul a:nth-child(1){
+    color: var(--paragraph-color);
+    }
+    header .Links .List ul a:hover li{
+    color: var(--paragraph-color);
+    }
+    header .Links .List .A-One{
+    background-image: linear-gradient(270deg, #2fcffa,var(--paragraph-color));
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 35px;
+    }
+    header .Links .List .A-One a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    header .Links .List .A-One a i{
+    margin-right: 15px;
+    }
+    /* End Header */
+    /* Start Section */
+    .Section{
+        padding-top: var(--padding-top);
+        padding-bottom: var(--padding-Bottom);
+        width: 100%;
+    }
+    .Section .Slider-left{
+        position: relative;
+    }
+    .Section .Slider-left img{
+        height: 960px;
+        position: absolute;
+        top: -197px;
+        left: -8px;
+    }
+        /* Responsive Design */
+            @media(max-width:1024px){
+                .Section .Slider-left img{
+                    display: none;
+                }
+            }
+    .Section .Conspet .Container{
+        width: 86rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+        /* Responsive Design */
+        @media(max-width:1024px){
+            .Section .Conspet .Container{
+                width: 620px;
+                flex-wrap: wrap;
+                gap: 60px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    .Section .Conspet .Text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Section .Conspet .Text h1{
+        font-size: 48px;
+    }
+    /* Responsive Design */
+    @media(max-width:768px){
+        .Section .Conspet .Text h1{
+            font-size: 35px;
+        }
+    }
+    /* Responsive Design */
+    @media(max-width:768px){
+        .Section .Conspet .Text{
+            margin-bottom: 100px;
+        }
+    }
+    .Section .Conspet .Text p{
+        font-size: 14px;
+        line-height: 1.7;
+        color: #2c4855;
+    }
+    .Section .Conspet .Text .Icon{
+        display: flex;
+        gap: 30px;
+    }
+    .Section .Conspet .Text .Icon .P-One{
+        width: 150px;
+        padding: 15px;
+        border-radius: 30px;
+        background-image: linear-gradient(270deg, #2fcffa,var(--paragraph-color));
+        display: flex;
+        justify-content: center;
+    }
+    .Section .Conspet .Text .Icon .P-One a{
+        text-decoration: none;
+        color: white;
+    }
+    .Section .Conspet .Text .Icon .P-One i{
+        margin-left: 10px;
+    }
+    .Section .Conspet .imgs img{
+        height: 627px;
+    }
+    /* End Section */
+    /* STart Services */
+    .Services{
+        padding-top: var(--padding-top);
+        padding-bottom: var(--padding-Bottom);
+    }
+        /* Responsive Design */
+        @media(max-width:768px){
+            .Services{
+                display: grid;
+            }
+        }
+            
+    .Services .Spacial-Heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Services .Spacial-Heading h1{
+        margin: 0;
+    }
+    .Services .Spacial-Heading span{
+        color: var(--Span-Color);
+    }
+    .Services .Spacial-Heading p:nth-child(1){
+        font-size: 20px;
+    }
+    .Services .Spacial-Heading p{
+        font-size: 16px;
+        width: 38rem;
+        line-height: 1.5;
+        color: #c1c1c1;
+        margin-bottom: 60px;
+    }
+    .Services .Boxs{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 278px);
+        justify-content: center;
+        gap: 9px;
+    }
+        /* Responsive Design */
+        @media(max-width:768px){
+            .Services .Boxs{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 288px);
+                gap: 25px;
+                justify-content: center;
+            }
+        }
+    .Services .Boxs .Box{
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        background-image: linear-gradient(270deg, #2fcffa,var(--paragraph-color));
+        position: relative;
+        border-radius: 30px;
+        background-image: url(./Imges/client-bg.png);
+        background-size: cover;
+        position: relative;
+        transition: var(--transition);
+    }
+    .Services .Boxs .Box:hover{
+        color: white;
+        background-image: linear-gradient(to right, var(--paragraph-color), #2fcffa);
+        border-top-right-radius: 80px;
+        padding: 29px;
+        transform: scale(1.1);
+        z-index: 1; 
+    }
+    .Services .Boxs .Box:hover p{
+        color: #2c4855;
+    }
+    .Services .Box i{
+        font-size: 30px;
+        transition: var(--transition);
+    }
+    .Services .Box:hover i{
+        margin: 10px;
+        color: white;
+    }
+    .Services .Box .Footer-Icon{
+        display: flex;
+        align-items: center;
+    }
+    .Services .Box .Footer-Icon i{
+        margin-left: 25px;
+    }
+    /* End Services */
+    /* Start About */
+    .About{
+        padding-top: var(--padding-top);
+        padding-bottom: var(--padding-Bottom);
+    }
+    .About .Spacial-Heading h2{
+        margin: 0;
+    }
+    .About .Spacial-Heading span{
+        color: var(--Span-Color);
+    }
+    .About .Spacial-Heading span:nth-last-child(2){
+        font-size: 23px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .About .Spacial-Heading p{
+        font-size: 18px;
+        width: 736px;
+        color: var(--p-color);
+    }
+    .About .List-Deities{
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        gap: 10px;
+    }
+    .About .List-Deities .Deities:hover h2{ 
+        color: var(--Span-Color);
+        transition: var(--transition);
+    }
+    .About p{ 
+        font-size: 16px;
+        width: 736px;
+        color: var(--p-color);
+    }
+    .About a{ 
+        text-decoration: none;
+        width: 200px;
+        padding: 15px;
+        border-radius: 30px;
+        background-image: linear-gradient(270deg, #2fcffa, var(--paragraph-color));
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .About .G-Parent{ 
+        display: flex;
+        gap: 50px;
+    }
+    .About .G-Two img{ 
+        height: 600px;
+    }
+    @media(max-width:991px){
+        .About .G-Two img{ 
+            display: none;
+        }
+    }
+    /* End About */
+    /* Start Pricing */
+    .Pricing{
+        padding-top: var(--padding-top);
+        padding-bottom: var(--padding-Bottom);
+    }
+    .Pricing .Box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .Pricing .Box .Min-Box{
+        width: 360px;
+        height: 600px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 50px;
+        background-image: linear-gradient(270deg, #2f41fa, #2fcffa);
+    }
+    .Pricing .Box .Min-Box img:nth-child(1){
+        height: 200px;
+        width: 300px;
+        /* transform: rotate(180deg); */
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50px; 
+    }
+    .Pricing .Box .Min-Box:nth-child(2) img:first-child{
+        height: 200px;
+        width: 300px;
+        transform: rotate(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50px; 
+    }
+    .Pricing .Box .Min-Box img:last-child{
+        height: 190px;
+        width: 280px;
+        transform: rotate(360deg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 50px;    
+    }
+    .Pricing .Box .Min-Box a{
+        width: 200px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 30px;
+        background-image: linear-gradient(270deg, #2fcffa, var(--paragraph-color));
+        color: white;
+        margin-top: 45px;
+    }
+    /* End Pricing */
+    /* STart Footer */
+    footer{
+        padding-top: 200px;
+        padding-bottom: 38px;
+        background-image: url(./Imges/footer-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+    footer .Grid-Parent{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        justify-content: center;
+        align-items: center;
+    }
+    footer .Grid-Header
+    ,.Grid-Footer:not(:last-child){
+        text-align: center;
+    }
+    footer .Grid-Header .Inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    footer .Grid-Header .Inputs input{
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        caret-color: var(--paragraph-color);
+    }
+    footer .Grid-Header .Inputs button{
+        border: none;
+        padding: 10px;
+        border-radius: 26px;
+        width: 200px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        background-image: linear-gradient(270deg, #2fcffa, var(--paragraph-color));
+        cursor: pointer;
+    }
+    footer .Grid-Header .Inputs i{
+        margin-left: 15px;
+    }
+    footer .Grid-Footer h2{
+        color: white;  
+    }
+    footer .Grid-Footer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .Grid-Footer ul li
+    ,p{
+        margin-bottom: 10px;
+        color: white;
+    }
+    footer .Grid-Footer ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .Copy-Right{
+        text-align: center;
+    }
+    .Copy-Right span{
+        color: #2f41fa;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    /* End Footer */
